@@ -1,15 +1,16 @@
 """A module containing pytest fixtures that are used in multiple places in the test suite."""
 import os
 
-import matplotlib
+# matplotlib.use('Agg')
+# import matplotlib
 import pytest
 from eppy.iddcurrent import iddcurrent
 from six import StringIO
 
 from geomeppy.idf import IDF
 
-if not os.getenv("CI"):
-    matplotlib.use("Qt5Agg")
+# if not os.getenv("CI"):
+    # matplotlib.use("Qt5Agg")
 
 base_idf_txt = """
     Version, 8.5;

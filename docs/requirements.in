@@ -1,5 +1,5 @@
 eppy
-matplotlib
+# matplotlib
 pyclipper
 pypoly2tri
 shapely
