@@ -21,7 +21,7 @@ from .recipes import (
     translate,
     translate_to_origin,
 )
-from .view_geometry import view_idf
+# from .view_geometry import view_idf
 from .geom.core_perim import core_perim_zone_coordinates
 
 
@@ -222,10 +222,10 @@ class IDF(PatchedIDF):
         """
         set_wwr(self, wwr, construction, force, wwr_map, orientation)
 
-    def view_model(self, test=False):
-        # type: (Optional[bool]) -> None
-        """Show a zoomable, rotatable representation of the IDF."""
-        view_idf(idf=self, test=test)
+    # def view_model(self, test=False):
+    #     # type: (Optional[bool]) -> None
+    #     """Show a zoomable, rotatable representation of the IDF."""
+    #     view_idf(idf=self, test=test)
 
     def to_obj(self, fname=None, mtllib=None):
         # type: (Optional[str], Optional[str]) -> None
